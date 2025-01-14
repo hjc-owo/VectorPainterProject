@@ -1,6 +1,6 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={arXiv preprint},
-  year={20XX}
+@article{hu2024vectorpainter,
+  title={VectorPainter: Advanced Stylized Vector Graphics Synthesis Using Stroke-Style Priors},
+  author={Hu, Juncheng and Xing, Ximing and Zhang, Jing and Yu, Qian},
+  journal={arXiv preprint arXiv:2405.02962},
+  year={2024}
 }
