@@ -37,7 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Website Title -->
-    <title>VectorPainter</title>
+    <title>VectorPainter: Advanced Stylized Vector Graphics Synthesis Using Stroke-Style Priors</title>
     <!-- The description that appears when you share the link -->
     <meta property="og:description" content="VectorPainter: Advanced Stylized Vector Graphics Synthesis Using Stroke-Style Priors"/>
     <!-- Used to display page descriptions in search results -->
@@ -66,7 +66,7 @@
                 <a class="link" href="https://ximinng.github.io/">Ximing Xing</a><sup>1</sup>
             </div>
             <div class="col-12 col-md">
-                <a class="link" href="https://scholar.google.ch/citations?user=XtwOoQgAAAAJ">Jing Zhang</a><sup>1</sup>
+                <a class="link" href="https://scholar.google.com/citations?user=XtwOoQgAAAAJ">Jing Zhang</a><sup>1</sup>
             </div>
             <div class="col-12 col-md">
                 <a class="link" href="https://scholar.google.com/citations?user=mmm90qgAAAAJ">Qian Yu</a><sup>1</sup>
@@ -103,14 +103,45 @@
         </div>
     </div>
     <br>
+
+      <!-- Features -->
+      <div class="card border-0">
+        <div class="card-body x-gradient-block">
+          <h2 class="card-title text-center" style="font-size: 2rem; margin-bottom: 1.5rem">
+            ✨ Highlights
+          </h2>
+          <hr class="body-hr" />
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <strong>Innovative Concept:</strong> <b style="color: #7e57c2">VectorPainter</b> redefines stylized vector graphics generation as a process of rearranging strokes extracted from a reference image.
+            </li>
+            <li class="mb-2">
+              <strong>Efficient Stroke Extraction:</strong> We propose a novel algorithm to extract high-quality vectorized strokes while preserving structural and stylistic details.
+            </li>
+            <li class="mb-2">
+              <strong>High-Quality Results:</strong> <b style="color: #7e57c2">VectorPainter</b> retains both textual semantics and artistic style, outperforming existing methods in stylized vector graphics generation.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+
     <!-- teaser -->
     <div class="text-center">
         <figure class="figure">
             <img src="assets/teaser.png" class="img-thumbnail figure-img img-fluid rounded"
                  alt="beautiful teaser">
-            <figcaption class="figure-caption"><b>Vector Graphics Synthesized by Our VectorPainter.</b> Given a bitmap reference image and a textual description, our VectorPainter generates a stylized vector graphic aligned with the text.</figcaption>
+            <figcaption class="figure-caption"><b>Vector Graphics Synthesized by Our <b style="color: #7e57c2">VectorPainter</b>.</b> Given a bitmap reference image and a textual description, our VectorPainter generates a stylized vector graphic aligned with the text.</figcaption>
         </figure>
     </div>
+
+
+    <!-- TL;DR -->
+    <div class="text-center" style="margin-top: 20px; font-size: 20px; font-weight: 500">
+        <b>TL;DR:</b> <b style="color: #7e57c2">VectorPainter</b> synthesizes text-guided vector graphics by imitating strokes.
+    </div>
+    </header>
+    <br />
 
 </header>
 <br>
@@ -121,7 +152,7 @@
         <div class="card-body x-gradient-block">
             <h2 class="card-title text-center card-title-margin">Abstract</h2>
             <p class="card-text">
-                We introduce <i>VectorPainter</i>, a novel framework designed for reference-guided text-to-vector-graphics synthesis. Based on our observation that the style of strokes can be an important aspect to distinguish different artists, our method reforms the task into synthesize a desired vector graphics by rearranging stylized strokes, which are vectorized from the reference images. Specifically, our method first converts the pixels of the reference image into a series of vector strokes, and then generates a vector graphic based on the input text description by optimizing the positions and colors of these vector strokes. To precisely capture the style of the reference image in the vectorized strokes, we propose an innovative vectorization method that employs an imitation learning strategy. To preserve the style of the strokes throughout the generation process, we introduce a style-preserving loss function. Extensive experiments have been conducted to demonstrate the superiority of our approach over existing works in stylized vector graphics synthesis, as well as the effectiveness of the various components of our method.
+                We introduce <b style="color: #7e57c2"><i>VectorPainter</i>,</b> a novel framework designed for reference-guided text-to-vector-graphics synthesis. Based on our observation that the style of strokes can be an important aspect to distinguish different artists, our method reforms the task into synthesize a desired vector graphics by rearranging stylized strokes, which are vectorized from the reference images. Specifically, our method first converts the pixels of the reference image into a series of vector strokes, and then generates a vector graphic based on the input text description by optimizing the positions and colors of these vector strokes. To precisely capture the style of the reference image in the vectorized strokes, we propose an innovative vectorization method that employs an imitation learning strategy. To preserve the style of the strokes throughout the generation process, we introduce a style-preserving loss function. Extensive experiments have been conducted to demonstrate the superiority of our approach over existing works in stylized vector graphics synthesis, as well as the effectiveness of the various components of our method.
             </p>
         </div>
     </div>
@@ -238,14 +269,14 @@
             <h2 class="card-title card-title-margin">Methodology</h2>
             <hr class="body-hr"/>
             <p class="card-text">
-                VectorPainter comprises two main steps, <i>Stroke Style Extraction</i> and <i>Stylized SVG Synthesis</i>. In the stroke style extraction stage, VectorPainter extracts vectorized style strokes from the reference image. During the generation process, VectorPainter produces SVGs based on the style strokes extracted in the first step. A style-preserving loss is introduced to enhance the stylistic consistency of the final output SVGs.
+                <b style="color: #7e57c2">VectorPainter</b> comprises two main steps, <i>Stroke Style Extraction</i> and <i>Stylized SVG Synthesis</i>. In the stroke style extraction stage, <b style="color: #7e57c2">VectorPainter</b> extracts vectorized style strokes from the reference image. During the generation process, <b style="color: #7e57c2">VectorPainter</b> produces SVGs based on the style strokes extracted in the first step. A style-preserving loss is introduced to enhance the stylistic consistency of the final output SVGs.
             </p>
             <div class="text-center">
                 <figure class="figure">
                     <img src="assets/pipeline.png" class="figure-img img-fluid rounded" alt="method" style="width: 67%">
                     <figcaption class="figure-caption">
-                        <b>Pipeline of Our VectorPainter.</b><br>
-                        Given a text prompt \(\mathcal{P}\) and a reference image \(\mathcal{I}_{s}\), VectorPainter optimizes the parameters \(\theta\) of the vector graphic \(\mathcal{S}\). Initially, it extracts vectorized strokes from \(\mathcal{I}_s\), which are then used to initialize the synthesis process. During synthesis, a style-preserving loss is introduced to ensure the style fidelity.
+                        <b>Pipeline of Our <b style="color: #7e57c2">VectorPainter</b>.</b><br>
+                        <p style="text-align: left">Given a text prompt \(\mathcal{P}\) and a reference image \(\mathcal{I}_{s}\), <b style="color: #7e57c2">VectorPainter</b> optimizes the parameters \(\theta\) of the vector graphic \(\mathcal{S}\). Initially, it extracts vectorized strokes from \(\mathcal{I}_s\), which are then used to initialize the synthesis process. During synthesis, a style-preserving loss is introduced to ensure the style fidelity.</p>
                     </figcaption>
                 </figure>
             </div>
